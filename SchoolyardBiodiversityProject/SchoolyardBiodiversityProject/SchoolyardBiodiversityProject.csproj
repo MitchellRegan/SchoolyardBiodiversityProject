@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap.css" />
+    <None Include="wwwroot\css\kdwpt-base.css" />
+    <None Include="wwwroot\css\top_menu.css" />
+    <None Include="wwwroot\images\blogger_20.png" />
+    <None Include="wwwroot\images\facebook_20.png" />
+    <None Include="wwwroot\images\feed_20.png" />
+    <None Include="wwwroot\images\KDWPT-Name.png" />
+    <None Include="wwwroot\images\KS_Outdoors_Map.png" />
+    <None Include="wwwroot\images\top-left-img.png" />
+    <None Include="wwwroot\images\top-middle-img.png" />
+    <None Include="wwwroot\images\top-right-img.png" />
+    <None Include="wwwroot\images\twitter_20.png" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>

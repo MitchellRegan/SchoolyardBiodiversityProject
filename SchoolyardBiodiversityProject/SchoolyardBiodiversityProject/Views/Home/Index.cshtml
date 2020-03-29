@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="~/css/leaflet.css" />
+
+<div class="landing-page-attribute-header">
+    <h1>Schoolyard Biodiversity Exchange</h1>
+</div>
+
+<!--Top Center section to show the map-->
+<div>
+    <p>
+        Hello. This is where we need to put a description about what the Schoolyard Biodiversity Exchange is.
+    </p>
+    <!--<img src="~/images/KS_Outdoors_Map.png" />-->
+
+    <!-- Map is displayed in this div -->
+    <div id="mapid" style="height: 400px; width: 700px;"></div>
+    <script src="~/js/leaflet.js"></script>
+
+
+    <!-- JavaScript for LeafletJS -->
+    <script>
+
+        var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+        // OpenStreetMap Tiles (WORKING... Not the prettiest map, but having trouble getting others to work)
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 17,
+            minZoom: 9
+        }).addTo(mymap);
+
+    </script>
+</div>
+
+<div>
+    <!--Bottom Left section for showing instructions-->
+    <div class="span3" style="margin-left: 0px; width: 420px">
+        <div class="ui-corner-all">
+            <div class="blockheader ui-widget-header">
+                Instructions
+            </div>
+            <div class="subitemnoborders landingpageblock ui-corner-bottom">
+                <ul class="subitemnoborders landingpageblock ui-corner-bottom">
+                    <li class="block-listitem">
+                        <b><a href="">What is the Schoolyard Biodiversity Project?</a></b>
+                    </li>
+                    <li class="block-listitem">
+                        <b><a href="">How do I sign up as a new member?</a></b>
+                    </li>
+                    <li class="block-listitem">
+                        <b><a href="">How do I submit a new sighting?</a></b>
+                    </li>
+                    <li class="block-listitem">
+                        <b><a href="">FAQ</a></b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Bottom Right section for actions that teachers can use-->
+    <div class="span3" style="margin-left: 30px; width: 420px">
+        <div class="ui-corner-all">
+            <div class="blockheader ui-widget-header">
+                Teachers
+            </div>
+            <div class="subitemnoborders landingpageblock ui-corner-bottom">
+                <ul class="subitemnoborders landingpageblock ui-corner-bottom">
+                    <li class="block-listitem">
+                        <!--Button for new teacher signup-->
+                        <b><a asp-controller="Home" asp-action="TeacherRegistration">
+                            New Teacher Signup
+                        </a></b>
+                    </li>
+                    <li class="block-listitem">
+                        <!--Button for adding new sighting data-->
+                        <b><a asp-controller="Home" asp-action="DataSubmission">
+                            New Sighting
+                        </a></b>
+                    </li>
+                    <li class="block-listitem">
+                        <!--Button for adding new sighting data-->
+                        <b><a asp-controller="Home" asp-action="ViewSpreadsheetData">
+                            View Data
+                        </a></b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

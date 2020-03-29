@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "ViewSpreadsheetData";
+}
+
+<!--CSS and JS scripts-->
+<script type="text/javascript" src="~/js/csvProcessFile.js" charset="utf-8"></script>
+<link href="~/css/csv_table.css" rel="stylesheet" />
+
+<h1>Spreadsheet Data</h1>
+
+<form onsubmit="return processFile();" action="#" name="myForm" id="aForm" method="POST">
+    <input type="file" id="myFile" name="myFile" accept=".csv"><br>
+    <input type="submit" name="submitMe" value="Process File">
+</form>
+<div style="overflow:scroll; width:100%; height:500px">
+    <section>
+        <table id="myTable"></table>
+    </section>
+</div>

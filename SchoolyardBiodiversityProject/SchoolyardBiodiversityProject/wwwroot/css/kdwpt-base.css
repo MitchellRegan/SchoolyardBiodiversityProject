@@ -1,0 +1,990 @@
+﻿/********** KDWPT BASE STYLE SHEET ************/
+
+@font-face {
+    font-family: GirardSlabLight;
+    src: url(https://ksoutdoors.com/fonts/GirardSlab/GirardSlab-RegularLight.otf);
+}
+
+@font-face {
+    font-family: GirardSlabBold;
+    src: url(https://ksoutdoors.com/fonts/GirardSlab/GirardSlab-RegularBold.otf);
+}
+
+@font-face {
+    font-family: GirardSlabHeavy;
+    src: url(https://ksoutdoors.com/fonts/GirardSlab/GirardSlab-RegularHeavy.otf);
+}
+
+body {
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 14px;
+    background: #5b4f38 url('https://ksoutdoors.com/images/page_bg.png') scroll bottom left repeat;
+}
+
+#page {
+    width: 100%;
+}
+
+.page-bg {
+    /*background: transparent url('../images/base/bg.png') bottom left repeat-x scroll;*/
+    /*opacity: 0.4;
+    filter: alpha(opacity=40);*/
+    background: transparent url('../images/page_bg.png') top right repeat;
+    background: url('../images/page_bg.png') top right repeat, -moz-linear-gradient(top, #d3b782, #d3b782, #5b4f38);
+    background: url('../images/page_bg.png') top right repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#d3b782), to(#6b5d42));
+    background: url('../images/page_bg.png') top right repeat, -webkit-linear-gradient(top, #d3b782, #d3b782, #5b4f38);
+    background: url('../images/page_bg.png') top right repeat, -o-linear-gradient(top, #d3b782, #d3b782, #5b4f38);
+    background: url('../images/page_bg.png') top right repeat, linear-gradient(to bottom, #d3b782, #d3b782, #5b4f38);
+    margin-top: -2px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.page-body {
+    /*background: transparent url('../images/page_bg.png') top right repeat;*/
+    /*background: #d3b782 url('../images/page_bg.png') top right repeat;*/
+}
+
+.main-bg {
+    width: 1200px;
+    margin: 0 auto;
+    background: transparent url("../images/main-bg.png") top right repeat;
+    -moz-border-radius: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.main-area {
+    background: transparent url("../images/page_bg.png") top right repeat;
+    /*background: url('../images/page_bg.png') top right repeat, -moz-linear-gradient(top, transparent, transparent, transparent, transparent, #adacac); 
+	background: url('../images/page_bg.png') top right repeat, -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#adacac));
+	background: url('../images/page_bg.png') top right repeat, -webkit-linear-gradient(top, transparent, transparent, transparent, transparent, #adacac); 
+	background: url('../images/page_bg.png') top right repeat, -o-linear-gradient(top, transparent, transparent, transparent, transparent, #adacac); 
+	background: url('../images/page_bg.png') top right repeat, linear-gradient(to bottom, transparent, transparent, transparent, transparent, #adacac);
+	*/
+    background: url("../images/page_bg.png") top right repeat;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 0 20px 5px 20px;
+}
+
+.span9.main-content {
+    margin-left: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /*font-family: "Times New Roman", Arial, Helvetica, sans-serif;*/
+    font-family: sans-serif;
+}
+
+h1 {
+    line-height: normal;
+    font-size: 1.7em;
+}
+
+a {
+    /*font-weight: 500;*/
+}
+
+p {
+    /* font-size: .9em; */
+    font-size: 14px;
+}
+
+hr {
+    border-top: 1px solid #2B3810;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.button, .defaultbutton, .btn {
+    text-shadow: 1px 1px #000000;
+}
+
+
+input, textarea, select, .uneditable-input {
+    border: 1px solid #333333;
+}
+
+.icon-img {
+    padding: 5px 5px 5px 0px;
+}
+
+.expand-line {
+    margin: 5px 0 5px 0;
+}
+
+.expand-body {
+    display: none;
+    margin: 0 0 0 20px;
+}
+
+    .expand-body .content-view-full, .expand-body .content-view-children {
+        margin-top: 0px;
+    }
+
+        .expand-body .content-view-full .attribute-short {
+            margin-top: 0px;
+        }
+
+.clickhead-link1 {
+    font-weight: bold;
+}
+
+section ul li:before, footer ul li:before, section ol li:before, footer ol li:before {
+    content: "";
+    color: #4d6821;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: -1px;
+}
+
+.section-body ol li {
+    left: 30px;
+}
+
+section div .mobile_menu_contain {
+    display: block;
+    padding-left: 0px;
+}
+
+    section div .mobile_menu_contain li {
+        padding-top: .25em;
+    }
+
+        section div .mobile_menu_contain li a {
+            text-align: left;
+            width: 100%;
+        }
+
+.subnavigation .header2 {
+    margin-left: 15px;
+}
+
+.landing-page-attribute-header {
+    margin-bottom: 10px;
+}
+
+    .landing-page-attribute-header h1 {
+        font-family: GirardSlabHeavy;
+        letter-spacing: 1px;
+        font-size: 2em;
+        padding: 0px 0px 10px 0px;
+    }
+
+.header1 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #2B3810;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.header2 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #4d6821;
+    line-height: normal;
+}
+
+.header3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: normal;
+}
+
+.header4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    line-height: normal;
+}
+
+.header5 {
+    font-size: 16px;
+}
+
+.main-navi {
+    /*font-family: "times new roman", Arial, Helvetica, sans-serif;*/
+    letter-spacing: 1px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.breadcrumb-wrapper {
+    /*margin-top: 25px;*/
+    margin-top: -10px;
+}
+
+.content-view-full .attribute-short {
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+.left-indent {
+    margin-left: 10px;
+}
+/* HEADER - START */
+
+header {
+    background: none;
+}
+
+header {
+    position: relative;
+    height: 200px;
+    /*height: 150px; JCC*/
+    /*background: #002569;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#133676', endColorstr='#8399c3');
+    background: -webkit-linear-gradient(#133676, #8399c3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#133676, #8399c3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#133676, #8399c3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#133676, #8399c3); /* Standard syntax */
+}
+
+    header .header-bg {
+        position: relative;
+        z-index: 2;
+        background: url("../images/grass.png") bottom left repeat-x;
+        height: 100%
+    }
+
+    header .header-bg2 {
+        background: transparent url('../images/page_bg.png') bottom center repeat;
+        height: 100%
+    }
+
+.extra-navi {
+    font-size: 11px;
+}
+
+
+header img#header-background {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+header #kdwpt_name {
+    position: relative;
+    /*margin: 25px 0 0 55px;*/
+    margin: 15px 0 0 40px;
+}
+
+header #kdwpt-social {
+    margin-left: 10px;
+    text-align: right;
+}
+
+header .kdwpt-logo {
+    position: relative;
+    /*margin: 25px 50px 0 0;*/
+    margin: 15px 50px 0 0;
+    float: right;
+    z-index: 5000;
+}
+
+header .logo {
+    margin-top: 5px;
+    width: auto;
+    height: auto;
+    text-align: right;
+}
+
+header .form-search {
+    margin: 25px 0 5px 0;
+}
+
+    header .form-search label {
+        position: absolute;
+        right: 30px;
+    }
+
+header .header-bg-img-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header .header-bg-imgs {
+    position: absolute;
+    z-index: 1;
+}
+
+img.header-left-img {
+    position: relative;
+    left: -35px;
+}
+
+img.header-middle-img {
+    margin: 0 240px;
+}
+
+.navbar.extra-navi .nav {
+    background: transparent;
+}
+
+    .navbar.extra-navi .nav > li > a {
+        color: #f8b827;
+        text-shadow: 2px 1px #000000;
+        font-size: 16px;
+    }
+
+.search-query {
+    border-radius: 2px;
+    color: #000000;
+}
+
+.nomobile {
+    display: block;
+}
+
+.mobile-show {
+    display: none;
+}
+
+@media (max-width: 979px) {
+    .nomobile {
+        display: none;
+    }
+
+    .mobile-show {
+        display: block;
+    }
+}
+/* HEADER - END */
+
+.no-small-mobile {
+    display: block;
+}
+
+.show-small-mobile {
+    display: none;
+}
+
+section ul li:before, footer ul li:before, section ol li:before, footer ol li:before {
+    content: " ";
+}
+
+.block-desc {
+    margin: 10px;
+}
+
+.content-view-full, .content-view-children, .content-view-block, .content-view-tagcloud {
+    margin: 5px 0;
+}
+
+.content-view-full {
+    margin: 5px 0;
+}
+
+.content-view-children .content-view-line:before, .content-view-children .content-view-line:after {
+    display: inline;
+}
+
+.content-view-embed {
+    margin: 5px 0;
+}
+
+.imageright {
+    float: right;
+    margin-left: 5px;
+}
+
+.imageleft {
+    float: left;
+    margin-right: 5px;
+}
+
+.object-right {
+    margin-left: 5px;
+    clear: none;
+}
+
+.object-left {
+    margin-right: 5px;
+    clear: none;
+}
+
+.attribute-long ol {
+    margin: 0 0 10px 2em;
+}
+
+.attribute-long ul {
+    list-style: disc;
+    margin-left: 2.5em;
+}
+
+/* BLOCKS - START */
+
+.issuuembed.issuu-isrendered {
+    weight: 98% !important;
+}
+
+.block-separator {
+    margin: 0px 0px;
+}
+
+.fishing_report_block_item {
+    margin: 10px 0 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #000;
+}
+
+    .fishing_report_block_item .class-report-title {
+        font-size: 20px;
+        color: #4d6821;
+        font-weight: bold;
+    }
+
+.ui-accordion .block-news-item.ui-accordion-header {
+    background: none;
+    color: #4d6821;
+    font-weight: bold;
+}
+
+.related_accordion .ui-state-default .ui-icon {
+    background-image: url('../images/ui-icons_4d6821_256x240.png');
+}
+
+aside > .content-view-aside article {
+    padding: 0;
+}
+
+.block-type-mainstory {
+    margin: 0px 0px 10px 0;
+    padding: 0px;
+}
+
+.block-type-mainstory-description {
+    /*margin: 15px 0 0 0;*/
+}
+
+.blockimage {
+    height: 97%;
+    width: 97%;
+    cursor: pointer;
+}
+
+.blockheader {
+    padding: .3em 3em .3em .5em;
+}
+
+.landingpageblock {
+    height: 18em;
+    width: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.blockimeagecontain {
+    display: block;
+    max-width: 16em;
+    max-height: 9em;
+    overflow: hidden;
+    margin: 0 auto 3px auto;
+}
+
+.blockimage_inside {
+}
+
+.blockimage-link {
+    height: 97%;
+    width: 97%;
+    cursor: pointer;
+}
+
+.block_image_borders {
+    border: none;
+    margin: 0px 0px 0px 4px;
+    padding: 0px;
+}
+
+.subitemnoborders {
+    background-color: #fdf3cf;
+    background: #fdf3cf url('../images/page_bg.png') top right repeat;
+    background: url('../images/page_bg.png') top right repeat, -webkit-radial-gradient(#fdf3cf, #c2baa0);
+    background: url('../images/page_bg.png') top right repeat, -o-radial-gradient(#fdf3cf, #c2baa0);
+    background: url('../images/page_bg.png') top right repeat, -moz-radial-gradient(#fdf3cf, #c2baa0);
+    background: url('../images/page_bg.png') top right repeat, radial-gradient(#fdf3cf, #c2baa0);
+    border: none;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+}
+
+.subitemborders {
+    border: 1px solid #4d6821;
+    border-top: none;
+    margin: 0px 4px 10px 4px;
+    padding: 10px;
+}
+
+.subitemnoborders p {
+    padding: 0px;
+    margin: 0 0px 10.5px 0;
+}
+
+.subitemborders_full {
+    margin: 0px 4px 10px 4px;
+    padding: 10px;
+    background-color: #fdf3cf;
+    background: #fdf3cf url('../images/page_bg.png') top right repeat;
+    background: url('../images/page_bg.png') top right repeat, -webkit-radial-gradient(#fdf3cf, #c2baa0);
+    background: url('../images/page_bg.png') top right repeat, -o-radial-gradient(#fdf3cf, #c2baa0);
+    background: url('../images/page_bg.png') top right repeat, -moz-radial-gradient(#fdf3cf, #c2baa0);
+    background: url('../images/page_bg.png') top right repeat, radial-gradient(#fdf3cf, #c2baa0);
+    border: none;
+}
+
+.block-section {
+    margin: 0px 0 10px 0;
+}
+
+.location-section {
+    margin: 10px 0 0 0;
+}
+
+.block-type-content-grid.block-view-default {
+    text-align: center;
+}
+
+.subnavigation {
+    margin: 0px 0 5px 0;
+}
+
+.span3 .span2 {
+    width: 43%;
+}
+
+    .span3 .span2.no-margin {
+        margin: 0 0 0 10px;
+    }
+
+.field-row {
+    clear: left;
+}
+
+.field-label {
+    float: left;
+    width: 150px;
+}
+
+.field-text {
+}
+
+.standard-content {
+    margin: 10px 0;
+}
+
+/**** SEASON BLOCK - START ****/
+
+#sportsman_cal .seasons_title {
+    font-weight: bold;
+    /*font-size:1.5em;*/
+    font-size: 16px;
+}
+
+.season-item .season-item-dates {
+    font-weight: normal;
+    color: #000000;
+}
+
+.ui-accordion .season-item.ui-accordion-header {
+    background: none;
+    border: none;
+    padding: 0 0 0 0;
+}
+
+.season-item.ui-state-default a, .season-item.ui-state-default a:link, .season-item.ui-state-default a:visited {
+    color: #38389c;
+}
+
+.season-item.ui-state-default .ui-icon {
+    background-image: url("../images/Hunting/ui-icons_222222_256x240.png");
+}
+
+.ui-accordion .season-item.ui-accordion-icons {
+    padding-left: 1.5em;
+    margin-bottom: 10px;
+}
+
+.ui-accordion .season-item.ui-accordion-header .ui-accordion-header-icon {
+    left: .15em;
+}
+
+.ui-accordion .season-item.ui-accordion-content {
+    padding: 0em 0 0em 2em;
+    top: -5px;
+    border: none;
+}
+
+.ui-accordion .season-item.ui-accordion-content {
+    font-size: 12px;
+}
+/**** SEASON BLOCK - END ****/
+
+.sidemenu-link {
+    color: #38389c;
+    text-decoration: none;
+    -webkit-transition: color linear 0.2s;
+    -moz-transition: color linear 0.2s;
+    -ms-transition: color linear 0.2s;
+    -o-transition: color linear 0.2s;
+    transition: color linear 0.2s;
+}
+
+    .sidemenu-link:hover {
+        color: #4d6821;
+        text-decoration: underline;
+    }
+
+.block-listitem {
+    margin: 3px;
+    padding: 0.3em;
+}
+
+div.view-more {
+    display: inline;
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+    div.view-more a:hover {
+        color: #38389c;
+        text-decoration: none;
+    }
+
+
+/* BLOCKS - END */
+
+/**** IMAGE MAP - START ****/
+.hide-link {
+    margin: 10px;
+}
+
+.text-link-sect {
+    margin: 10px 0 0 0;
+    display: none;
+}
+
+    .text-link-sect .text-link {
+        padding: 5px;
+    }
+/**** IMAGE MAP - END ****/
+
+
+/**** LOCATION CLASS - START ****/
+
+.weather {
+    text-align: center;
+}
+
+.span3a.no-float-left {
+    clear: left;
+    float: right;
+    margin-left: 0px
+}
+
+.span7a.no-left {
+    margin-left: 0px;
+}
+
+.content-view-line .span7a {
+    margin-left: 30px;
+}
+
+.subsection-body {
+    margin-left: 0px;
+}
+
+.location-submenu {
+}
+
+.icon-section {
+    margin: 10px auto 10px auto;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+#icon-section div.fix-position {
+    background-color: #f1f1f1;
+    border: 1px solid #000000;
+    position: fixed;
+    z-index: 9000;
+    top: 30px;
+    padding: 10px 5px 10px 0;
+    margin: 0 2px 0 -1px;
+}
+
+.location-icons {
+    text-align: center;
+}
+
+.icon-section-title {
+    float: left;
+    width: 200px;
+    margin: 0 10px 0 5px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Georgia;
+    text-align: right;
+}
+
+.icon-item {
+    float: left;
+    margin: 0 2px 0 2px;
+}
+
+    .icon-item.viewAllLink {
+        margin: 10px 2px 0 15px;
+    }
+
+.location_information {
+    margin: 15px 10px 0 0;
+}
+
+.close-section {
+    height: 25px;
+    width: 25px;
+    float: right;
+    border: 1px solid #000;
+}
+
+.location_information .section-body {
+    margin: 10px 0 0 0px;
+}
+
+.location_information hr {
+    margin-top: 15px;
+    border-color: #2B3810;
+}
+
+.sub-sidemenu .sub-sidemenu-item {
+    text-align: center;
+}
+
+    .sub-sidemenu .sub-sidemenu-item a.side-button.disabled-link {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #000000;
+        margin: 10px auto 10px auto;
+    }
+
+    .sub-sidemenu .sub-sidemenu-item a.side-button {
+        width: 100%;
+        margin: 3px auto 2px auto;
+    }
+
+.sub-sidemenu .menu-buttons {
+    margin: 10px 0;
+}
+
+fieldset.alert {
+    margin: 10px;
+    border: 1px solid #ff0000;
+    color: #000000;
+}
+
+    fieldset.alert legend {
+        display: block;
+        width: auto;
+        padding: 0 5px;
+        margin-bottom: 0px;
+        font-size: 22.5px;
+        color: #ff0000;
+        border: 0;
+        border-bottom: 0px solid #eee;
+    }
+
+/**** LOCATION CLASS - END ****/
+
+/**** GALLERY CLASS - START ****/
+
+.full-gallery .gallery-viewer figure, .embed-gallery .gallery-viewer figure, .block-gallery .gallery-viewer figure {
+    margin: 0 auto;
+    background: #d5d5d5
+}
+
+.gallery-viewer img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.block-gallery .gallery-viewer figcaption {
+    bottom: 0;
+    top: auto;
+}
+
+.full-gallery .gallery-navigator, .embed-gallery .gallery-navigator, .block-gallery .gallery-navigator {
+    padding-top: 0px;
+}
+
+.full-gallery .gallery-viewer, .embed-gallery .gallery-viewer, .block-gallery .gallery-viewer {
+    padding-bottom: 0px;
+}
+
+div.content-view-full div.class-gallery div.content-view-galleryline {
+    text-align: center;
+    /*border: 1px solid #000000;*/
+    /*    box-shadow: 0px 0px 10px 0px #000000;*/
+    background-color: #fdf3cf;
+    background: #fdf3cf url('../images/page_bg.png') top right repeat;
+    background: url('../images/page_bg.png') top right repeat, -webkit-radial-gradient(#fdf3cf, #c2baa0);
+    background: url('../images/page_bg.png') top right repeat, -o-radial-gradient(#fdf3cf, #c2baa0);
+    background: url('../images/page_bg.png') top right repeat, -moz-radial-gradient(#fdf3cf, #c2baa0);
+    background: url('../images/page_bg.png') top right repeat, radial-gradient(#fdf3cf, #c2baa0);
+    float: left;
+    margin: 0 13px 25px 13px;
+    padding: 5px;
+    height: 140px;
+}
+
+div.content-view-full div.class-gallery div.content-view-children {
+    clear: both;
+    float: left;
+    margin: 20px 0;
+    padding: 0 0 30px;
+    width: 100%;
+}
+
+input[type="image"] {
+    margin: 0px 0px 9px 0px;
+}
+
+.content-view-galleryline p {
+    margin: 0 0 10px 0;
+}
+
+/**** GALLERY CLASS - END ****/
+
+/**** EVENT CLASS - START ****/
+
+.event-info-item {
+    margin: 5px 0 5px 0;
+}
+
+.cSeason {
+    background-color: #ff0000;
+    padding: 5px;
+    color: #ffffff;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #000000;
+    margin: 10px 0;
+    font-weight: bold;
+}
+/**** EVENT CLASS - END ****/
+
+.content-body.attribute-pdf {
+    text-align: left;
+}
+
+/**** FISHING LOCATION - START ****/
+
+.basic-lake-information {
+}
+/**** FISHING LOCATION - END ****/
+
+/**** SPECIES - START ****/
+
+.species-submenu {
+    margin-top: 15px;
+}
+
+.species_information {
+    margin: 15px 10px 0 0;
+}
+
+    .species_information hr {
+        margin-top: 15px;
+        border-color: #2B3810;
+    }
+
+/**** SPECIES - END ****/
+
+/**** FILE - START ****/
+.file-size {
+    font-style: italic;
+}
+
+/**** FILE - END ****/
+
+/**** SOCIAL BUTTONS - START ****/
+.social-section .attribute-socialize {
+    float: right;
+}
+
+.location-submenu .attribute-socialize {
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+
+    .location-submenu .attribute-socialize #___plusone_0, .social-section .attribute-socialize #___plusone_0 {
+        width: 30px !important;
+    }
+
+        .location-submenu .attribute-socialize #___plusone_0 iframe, .social-section .attribute-socialize #___plusone_0 iframe {
+            width: 50px !important;
+        }
+
+.print-button {
+    float: right;
+    margin-top: 2px;
+}
+
+.singlereport-print {
+    display: inline;
+    margin-left: 10px;
+}
+
+    .singlereport-print .print-button {
+        float: none;
+    }
+
+.social-section .email-tip-button {
+    margin-right: 20px;
+}
+
+.print-button.ui-state-default, .email-tip-button.ui-state-default {
+    /*background: transparent;
+	border: none;*/
+    /*color: #2B3810;*/
+    padding: 0 0 0 15px;
+    font-weight: normal;
+}
+
+    .print-button.ui-state-default .ui-icon.ui-icon-print, .email-tip-button.ui-state-default .ui-icon.ui-icon-mail-closed {
+        /*background-image: url("../images/State-Parks/ui-icons_2B3810_256x240.png");*/
+        right: auto;
+        left: .2em;
+    }
+
+.print-button.ui-button-text-icon-primary .ui-button-text, .print-button.ui-button-text-icons .ui-button-text, .email-tip-button.ui-button-text-icon-primary .ui-button-text, .email-tip-button.ui-button-text-icons .ui-button-text {
+    padding: .1em 1em .1em .3em;
+    font-size: .85em;
+}
+/**** SOCIAL BUTTONS - END ****/
+
+.attribute-caption {
+    margin: 0 auto 0 auto;
+    color: #000000;
+}
+
+.class-folder .attribute-short ul {
+    list-style: disc;
+    margin: 0 0 10px 3em;
+}
+
+.issuu span {
+    display: none;
+}
+
+section.location_information ul {
+    list-style: disc;
+}

@@ -1,0 +1,209 @@
+﻿
+/* Start - Mobile Menu */
+.mobile_header {
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    z-index: 9997;
+    top: 0px;
+    visibility: hidden;
+    display: none;
+    background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002569', endColorstr='#9eb0d1');
+    background: -webkit-linear-gradient(#002569, #9eb0d1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#002569, #9eb0d1); /* For Opera 11.1 to 12.0 */
+    bazckground: -moz-linear-gradient(#002569, #9eb0d1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#002569, #9eb0d1);
+    -moz-border-radius: 7px;
+}
+
+.mobile_header_overlay {
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    z-index: 9998;
+    top: 0px;
+    visibility: hidden;
+    display: none;
+    background: url("../images/grass.png") bottom left repeat-x;
+}
+
+
+.mobile_header {
+    width: 100%;
+    clear: both;
+    color: #ffffff; /*#4d6821;*/
+    text-shadow: 0px 1px #000000;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+    .mobile_header a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.mobile_tool_bar {
+    width: 100%;
+    height: 35px;
+    background: url('../images/menu-bg.png') top left repeat-x;
+    -moz-border-radius: 7px;
+    /*border-radius: 7px;*/
+    position: fixed;
+    z-index: 9999;
+    top: 88px;
+    visibility: hidden;
+    display: none;
+}
+
+    .mobile_tool_bar button {
+        background-color: transparent;
+        background-image: none;
+        color: #000000; /*#4d6821;*/
+        /*text-shadow: 0px 1px #ffffff;*/
+        text-transform: uppercase;
+        letter-spacing: .085em;
+        border-color: white;
+        border-top-style: none;
+        border-bottom-style: none;
+        border-radius: 0px;
+        border-width: 1px;
+        font-size: 14px;
+    }
+
+    .mobile_tool_bar #mainmenubtn {
+        margin-top: -5px;
+        margin-bottom: 5px;
+        letter-spacing: .085em;
+        border-style: none;
+        background: none;
+    }
+
+    .mobile_tool_bar #mobmenuselected {
+        border-left-style: solid;
+        width: 70%;
+        float: right;
+    }
+
+    .mobile_tool_bar #mobclosebtn {
+        float: right;
+        visibility: hidden;
+    }
+
+#mobile_popup_menu {
+    position: absolute;
+    z-index: 100;
+    -moz-border-radius: 7px;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    clear: both;
+}
+
+#mobile_popup_menu {
+    list-style-type: none;
+    margin-top: 6em;
+    padding-top: 1em;
+    width: 100%;
+    clear: both;
+    text-align: left;
+}
+
+.mobile_menu_contain {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+#mobile_popup_menu .main-area {
+    margin-top: 1.25em;
+    padding-top: 2em;
+    margin-bottom: 1.25em;
+}
+
+#mobile_popup_menu > div > div > div > div > center {
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+
+#mobile_popup_menu .ui-button {
+    text-align: left;
+}
+
+
+#mobile_popup_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#mobile_popup_menu li {
+    margin-top: .75em;
+    text-align: left;
+}
+
+    #mobile_popup_menu li .ui-button-text {
+        padding: .8em 1em;
+    }
+
+#mobile_popup_menu a {
+    width: 100%
+}
+
+
+.mobile {
+    display: none;
+    visibility: hidden;
+}
+
+.mobile_tool_bar form {
+    margin-top: 1.85em;
+}
+
+
+/* START - mobile tool bar*/
+
+
+
+@media (max-width: 979px), handheld and (orientation: landscape) {
+
+    .mobile_tool_bar {
+        visibility: visible;
+        display: block;
+    }
+
+    .mobile_header {
+        visibility: visible;
+        display: block;
+    }
+
+    .mobile_header_overlay {
+        visibility: visible;
+        display: block;
+    }
+
+    #icon-section div.fix-position {
+        background-color: #f1f1f1;
+        border: 1px solid #000000;
+        position: fixed;
+        z-index: 9000;
+        top: 100px;
+        padding: 10px 5px 10px 0;
+        margin: 0 2px 0 -1px;
+    }
+}
+
+@media (max-width: 910px) {
+}
+
+@media (max-width: 790px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+}
+
+@media (min-width: 980px) and (max-width: 1200px) {
+}

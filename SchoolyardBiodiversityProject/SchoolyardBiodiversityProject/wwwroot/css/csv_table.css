@@ -1,0 +1,22 @@
+﻿table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+th {
+    background-color: #4287f5;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+h2 {
+    color: #4287f5;
+}
+
+
+tr:nth-child(even) {
+    background-color: Grey;
+}

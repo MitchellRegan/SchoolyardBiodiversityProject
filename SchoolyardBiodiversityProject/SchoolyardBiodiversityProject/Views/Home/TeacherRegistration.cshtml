@@ -1,0 +1,17 @@
+﻿@model SchoolyardBiodiversityProject.Models.TeacherRegistrationInfo
+
+@{
+    ViewData["Title"] = "TeacherRegistration";
+}
+
+<h1>Teacher Registration</h1>
+
+<!--Form field for registering as a new teacher-->
+@using (Html.BeginForm("TeacherRegistration", "Home"))
+{
+    @Html.EditorForModel()
+    <a asp-controller="Home" asp-action="Index">
+        <button type="button">Back</button>
+    </a>
+    <input type="submit" value="Submit" />
+}

@@ -1,0 +1,17 @@
+﻿@model SchoolyardBiodiversityProject.Models.SightingInfo
+
+@{
+    ViewData["Title"] = "New Sighting";
+}
+
+<h1>Data Submission</h1>
+
+<!--Form field for inputting data for the sighting-->
+@using (Html.BeginForm("DataSubmission", "Home"))
+{
+    @Html.EditorForModel()
+    <a asp-controller="Home" asp-action="Index">
+        <button type="button">Back</button>
+    </a>
+    <input type="submit" value="Submit" />
+}
